@@ -1,5 +1,7 @@
 # Crypto Dashboard
 
+**Live demo:** https://crypto-dashboard-umber-zeta.vercel.app
+
 A full-stack cryptocurrency dashboard: a Python (FastAPI) backend that fetches
 and caches live market data from the [CoinGecko API](https://www.coingecko.com/en/api),
 and a Next.js (TypeScript) frontend that displays it in a sortable, responsive
