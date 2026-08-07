@@ -5,6 +5,8 @@ and caches live market data from the [CoinGecko API](https://www.coingecko.com/e
 and a Next.js (TypeScript) frontend that displays it in a sortable, responsive
 table with 7-day sparkline charts.
 
+![Crypto Dashboard screenshot](docs/screenshot.png)
+
 ## Stack
 
 - **Backend:** Python, FastAPI, httpx, in-memory TTL caching
