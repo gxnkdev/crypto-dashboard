@@ -1,3 +1,5 @@
+import os
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -5,9 +7,12 @@ from app import coingecko
 
 app = FastAPI(title="Crypto Dashboard API")
 
+# Comma-separated list, e.g. "http://localhost:3000,https://crypto-dashboard.vercel.app"
+allowed_origins = os.environ.get("ALLOWED_ORIGINS", "http://localhost:3000").split(",")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=allowed_origins,
     allow_methods=["GET"],
     allow_headers=["*"],
 )
